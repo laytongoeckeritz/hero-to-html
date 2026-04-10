@@ -37,6 +37,9 @@
         height: 450px;
         flex-shrink: 0;
         overflow: visible;
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
       }
 
       .hero-layer {
@@ -107,7 +110,7 @@
     </style>
   </head>
   <body>
-    <div class="hero-canvas" role="img" aria-label="BambooHR Powerfully Easy hero composition">
+    <div class="hero-canvas" role="img" aria-label="BambooHR Powerfully Easy hero composition" aria-hidden="true">
 
       <!-- ======== DESKTOP UI (Employee Community + My Stuff) ======== -->
       <div class="hero-layer hero-desktop">
