@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Desktop UI — Employee Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #e8ebe8;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      /* Reference: two cards only — My Stuff + Employee Community (no bottom widgets) */
+      .desktop-scale {
+        padding: 24px 0 48px;
+      }
+      .desktop-root {
+        position: relative;
+        width: 636.66px;
+        border-radius: 9.71px;
+      }
+      .desktop-inner {
+        position: relative;
+        z-index: 1;
+        /* EC top offset + 18px clearance below EC = shell height */
+        padding: 18.32px 12.6px 18px 12.6px;
+      }
+      .desktop-shell {
+        position: absolute;
+        inset: 0;
+        border-radius: 9.71px;
+        box-shadow: -4.291455268859863px 4.291455268859863px 0px #64b100;
+        outline: 0.61px #2e7918 solid;
+        outline-offset: -0.61px;
+        overflow: visible;
+      }
+      .desktop-bg {
+        position: absolute;
+        inset: 0;
+        background: #f4f3f0;
+        border-radius: 11.28px;
+      }
+      .i {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+      }
+      .ec-feed-avatar {
+        display: block;
+        border-radius: 3.79px;
+        box-shadow: 0.47px 0.47px 0px 0.47px rgba(56, 49, 47, 0.04);
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="desktop-scale">
+      <div class="desktop-root" data-name="UI" data-node-id="1436:26615">
+        <div class="desktop-bg" aria-hidden="true"></div>
+        <div class="desktop-shell" aria-label="Desktop UI frame"></div>
+
+        <!-- My Stuff -->
+        <div
+            style="
+              width: 196.91px;
+              height: 143.33px;
+              left: 12.6px;
+              bottom: 18px;
+              position: absolute;
+              border-radius: 7px;
+              justify-content: flex-start;
+              align-items: center;
+              display: inline-flex;
+              z-index: 2;
+            "
+          >
+            <div
+              style="
+                width: 196.91px;
+                height: 143.33px;
+                left: 0px;
+                top: 0px;
+                position: absolute;
+                background: white;
+                box-shadow: 0.47px 0.47px 0px 0.94px rgba(56, 49, 47, 0.03);
+                overflow: hidden;
+                border-radius: 7.57px;
+                outline: 0.47px #e4e3e0 solid;
+                outline-offset: -0.47px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                display: inline-flex;
+              "
+            >
+              <div style="align-self: stretch; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                <div style="align-self: stretch; padding: 7.52px 7.52px 7.52px 14px; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <span class="i" style="width: 9.4px; height: 9.4px; color: #2e7918"
+                    ><i class="fa-solid fa-mug-hot" style="font-size: 9.4px" aria-hidden="true"></i
+                  ></span>
+                  <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="align-self: stretch; color: #2e7918; font-size: 8.46px; font-weight: 600; line-height: 11.28px">My Stuff</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; height: 1px; background: #e4e3e0"></div>
+              </div>
+            <div style="flex: 1 1 0; height: 112.79px; padding: 0 14px 11.28px 14px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <div style="align-self: stretch; padding-top: 7.52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.52px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <div style="width: 20.68px; height: 20.68px; padding: 7.52px; background: #e8f2e4; border-radius: 5.68px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                    <span class="i" style="color: #2e7918"><i class="fa-solid fa-bullseye" style="font-size: 9.4px" aria-hidden="true"></i></span>
+                  </div>
+                  <div style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Goals</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 2px"></div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; height: 1px; background: #e4e3e0"></div>
+              </div>
+              <div style="align-self: stretch; padding-top: 7.52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.52px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <div style="width: 20.68px; height: 20.68px; padding: 7.52px; background: #e8f2e4; border-radius: 5.68px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                    <span class="i" style="color: #2e7918"><i class="fa-solid fa-graduation-cap" style="font-size: 9.4px" aria-hidden="true"></i></span>
+                  </div>
+                  <div style="flex: 1 1 0; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Training</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 2px"></div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; height: 1px; background: #e4e3e0"></div>
+              </div>
+              <div style="align-self: stretch; padding-top: 7.52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.52px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <div style="width: 20.68px; height: 20.68px; padding: 7.52px; background: #e8f2e4; border-radius: 5.68px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                    <span class="i" style="color: #2e7918"><i class="fa-solid fa-heart-pulse" style="font-size: 9.4px" aria-hidden="true"></i></span>
+                  </div>
+                  <div style="flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Benefits</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 2px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        <div class="desktop-inner">
+          <!-- Employee Community -->
+          <div
+            style="
+              width: 403.68px;
+              min-height: 255.18px;
+              height: auto;
+              margin-left: 207.71px;
+              background: white;
+              box-shadow: 0.47px 0.47px 0px 0.94px rgba(56, 49, 47, 0.03);
+              overflow: visible;
+              border-radius: 7px;
+              outline: 0.88px #e4e3e0 solid;
+              outline-offset: -0.88px;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              display: flex;
+            "
+          >
+            <div style="align-self: stretch; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+              <div style="width: 403.68px; padding-top: 10.51px; padding-left: 12.26px; padding-right: 12.26px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                <div style="justify-content: flex-start; align-items: flex-start; gap: 7.52px; display: inline-flex">
+                  <div style="height: 20.21px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 7.52px; display: inline-flex">
+                    <div style="flex: 1 1 0; padding-left: 5.64px; padding-right: 5.64px; justify-content: center; align-items: center; gap: 5.64px; display: inline-flex">
+                      <span class="i" style="color: #2e7918"><i class="fa-solid fa-bee" style="font-size: 8.46px" aria-hidden="true"></i></span>
+                      <div style="color: #2e7918; font-size: 7.52px; font-weight: 700; line-height: 11.28px">Employee Community</div>
+                    </div>
+                    <div style="align-self: stretch; height: 1.41px; background: #2e7918; border-radius: 1.89px"></div>
+                  </div>
+                  <div style="height: 20.21px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 7.52px; display: inline-flex">
+                    <div style="padding-left: 5.64px; padding-right: 5.64px; justify-content: center; align-items: center; gap: 5.64px; display: inline-flex">
+                      <span class="i" style="color: #48413f"><i class="fa-solid fa-bullhorn" style="font-size: 7.52px" aria-hidden="true"></i></span>
+                      <div style="color: #48413f; font-size: 7.52px; font-weight: 500; line-height: 11.28px">What’s Happening</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; height: 1px; background: #e4e3e0"></div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  height: 30.08px;
+                  padding-left: 12.26px;
+                  padding-right: 12.26px;
+                  padding-top: 7.52px;
+                  padding-bottom: 7.52px;
+                  justify-content: space-between;
+                  align-items: center;
+                  display: inline-flex;
+                "
+              >
+                <button
+                  type="button"
+                  style="
+                    width: 51.84px;
+                    height: 15.04px;
+                    padding-left: 5.64px;
+                    padding-right: 5.64px;
+                    background: white;
+                    box-shadow: 0.47px 0.47px 0px 0.47px rgba(56, 49, 47, 0.04);
+                    overflow: hidden;
+                    border-radius: 473.4px;
+                    outline: 0.47px #c6c2bf solid;
+                    outline-offset: -0.47px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3.76px;
+                    display: flex;
+                    border: none;
+                    cursor: default;
+                    font: inherit;
+                  "
+                >
+                  <span class="i" style="color: #48413f"><i class="fa-solid fa-pen-to-square" style="font-size: 7.52px" aria-hidden="true"></i></span>
+                  <span style="color: #48413f; font-size: 6.11px; font-weight: 600; line-height: 8.93px">New Post</span>
+                </button>
+                <div
+                  style="
+                    width: 75.19px;
+                    height: 15.04px;
+                    background: white;
+                    box-shadow: 0.47px 0.47px 0px 0.47px rgba(56, 49, 47, 0.04);
+                    border-radius: 473.4px;
+                    outline: 0.47px #c6c2bf solid;
+                    outline-offset: -0.47px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 3.76px 7.52px;
+                    gap: 3.76px;
+                  "
+                >
+                  <span style="color: #48413f; font-size: 6.58px; font-weight: 400; line-height: 9.4px">Personal feed</span>
+                  <span style="width: 1px; align-self: stretch; background: #e4e3e0"></span>
+                  <span class="i" style="color: #868180"><i class="fa-solid fa-caret-down" style="font-size: 7.52px" aria-hidden="true"></i></span>
+                </div>
+                <a href="#" style="color: #0b4fd1; font-size: 6.58px; font-weight: 500; line-height: 9.4px; text-decoration: none">Visit Employee Community</a>
+              </div>
+            </div>
+            <div style="align-self: stretch; padding-bottom: 10.51px; padding-left: 12.26px; padding-right: 12.26px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+              <div style="align-self: stretch; height: 1px; background: #e4e3e0"></div>
+              <!-- Feed rows -->
+              <div style="align-self: stretch; min-height: 34.78px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex; padding: 4px 0">
+                <div style="width: 380.18px; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <img
+                    class="ec-feed-avatar"
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    width="20.68"
+                    height="20.68"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div style="width: 163.73px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Photos from my hike this morning!</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 4px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 380.18px; height: 1px; background: #e4e3e0"></div>
+              <div style="align-self: stretch; min-height: 34.78px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex; padding: 4px 0">
+                <div style="width: 380.18px; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <img
+                    class="ec-feed-avatar"
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    width="20.68"
+                    height="20.68"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div style="flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Look at my cute puppies!</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 4px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 380.18px; height: 1px; background: #e4e3e0"></div>
+              <div style="align-self: stretch; min-height: 34.78px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex; padding: 4px 0">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <img
+                    class="ec-feed-avatar"
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    width="20.68"
+                    height="20.68"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div style="width: 143.13px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Did you see the meteor shower last night?</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 4px"></div>
+                  </div>
+                  <div style="flex: 1 1 0; justify-content: flex-end; align-items: center; gap: 3.76px; display: flex">
+                    <button type="button" style="width: 15.04px; height: 15.04px; min-width: 15.04px; padding: 0; background: white; box-shadow: 0.47px 0.47px 0px 0.47px rgba(56, 49, 47, 0.04); border-radius: 50%; outline: 0.47px #c6c2bf solid; outline-offset: -0.47px; border: none; cursor: default; display: flex; align-items: center; justify-content: center">
+                      <span class="i" style="color: #48413f"><i class="fa-regular fa-heart" style="font-size: 7.52px" aria-hidden="true"></i></span>
+                    </button>
+                    <button type="button" style="height: 15.04px; padding: 0 5.64px; background: white; box-shadow: 0.47px 0.47px 0px 0.47px rgba(56, 49, 47, 0.04); border-radius: 473.4px; outline: 0.47px #c6c2bf solid; outline-offset: -0.47px; border: none; cursor: default; color: #48413f; font-size: 6.11px; font-weight: 600">View Post</button>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 380.18px; height: 1px; background: #e4e3e0"></div>
+              <div style="align-self: stretch; min-height: 34.78px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex; padding: 4px 0">
+                <div style="width: 373.76px; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <img
+                    class="ec-feed-avatar"
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    width="20.68"
+                    height="20.68"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div style="width: 163.73px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Doritos are better than Cheetos. Discuss.</div>
+                    <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px; margin-top: 4px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="width: 380.18px; height: 1px; background: #e4e3e0"></div>
+              <div style="align-self: stretch; min-height: 34.78px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex; padding: 4px 0">
+                <div style="width: 373.76px; justify-content: flex-start; align-items: center; gap: 5.64px; display: inline-flex">
+                  <img
+                    class="ec-feed-avatar"
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    width="20.68"
+                    height="20.68"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div style="flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+                    <div style="color: #38312f; font-size: 7.05px; font-weight: 600; line-height: 10.34px">Quarterly Sales Update</div>
+                    <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-top: 4px">
+                      <span class="i" style="color: #2e7918"><i class="fa-solid fa-bullhorn" style="font-size: 6.02px" aria-hidden="true"></i></span>
+                      <span style="color: #2e7918; font-size: 6.58px; font-weight: 400; line-height: 9.4px">Announcement!</span>
+                      <div style="width: 107.7px; height: 4.38px; background: #e4e3e0; border-radius: 28.02px"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p
+      class="hero-assemble-footer"
+      style="position: fixed; bottom: 8px; left: 0; right: 0; text-align: center; font-size: 12px; color: #666"
+    >
+      Reference: <a href="desktop-ui-reference.png" style="color: #2e7918">desktop-ui-reference.png</a> · Figma
+      <code>1436:26615</code>
+    </p>
+    <script>
+      if (new URLSearchParams(location.search).has("embed")) {
+        document.documentElement.classList.add("hero-embed");
+      }
+    </script>
+    <style>
+      html.hero-embed .hero-assemble-footer {
+        display: none !important;
+      }
+      html.hero-embed body {
+        background: transparent !important;
+        min-height: auto !important;
+        display: block !important;
+        padding: 6px 0 6px 6px !important;
+      }
+      html.hero-embed .desktop-scale {
+        padding: 0 !important;
+      }
+    </style>
+  </body>
+</html>

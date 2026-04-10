@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Hero — responsive container test</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; }
+      body { background: #1a1a1a; padding: 24px; }
+
+      .hero-container {
+        width: 100%;
+        aspect-ratio: 1155 / 450;
+        overflow: hidden;
+        outline: 2px solid #555;
+      }
+
+      .hero-container iframe {
+        display: block;
+        width: 1155px;
+        height: 450px;
+        border: none;
+        transform-origin: top left;
+      }
+    </style>
+    <script>
+      function scaleHero() {
+        const container = document.querySelector('.hero-container');
+        const iframe = container.querySelector('iframe');
+        const scale = container.clientWidth / 1155;
+        iframe.style.transform = 'scale(' + scale + ')';
+      }
+      window.addEventListener('resize', scaleHero);
+      window.addEventListener('DOMContentLoaded', scaleHero);
+    </script>
+  </head>
+  <body>
+    <div class="hero-container">
+      <iframe src="powerfully-easy-hero.html" width="1155" height="450" scrolling="no"></iframe>
+    </div>
+  </body>
+</html>

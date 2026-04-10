@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Headcount by Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Merriweather:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Fields is proprietary; Merriweather approximates the title weight */
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e8ebe8;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      /* Design size from Figma export; scale up for readable QA */
+      .plugin-frame {
+        width: 164.15px;
+        height: 105.8px;
+        position: relative;
+        transform: scale(2.25);
+        transform-origin: center center;
+      }
+
+      .plugin-root {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      html.hero-embed body {
+        background: transparent !important;
+        min-height: auto !important;
+        display: block !important;
+        padding: 6px 0 6px 6px !important;
+      }
+      html.hero-embed .plugin-frame {
+        transform: none !important;
+        transform-origin: top left !important;
+      }
+    </style>
+    <script>
+      if (new URLSearchParams(location.search).has("embed")) {
+        document.documentElement.classList.add("hero-embed");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="plugin-frame" aria-label="Headcount by Location component">
+      <div class="plugin-root">
+        <div
+          style="
+            width: 164.15px;
+            height: 105.8px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            background: #fffeff;
+            box-shadow: -4.291455268859863px 4.291455268859863px 0px #64b100;
+            border-radius: 5.3px;
+            border: 0.72px #2e7918 solid;
+          "
+        ></div>
+        <!-- Donut chart from Figma SVG export (node 1436:26593); mask IDs prefixed for this page -->
+        <div
+          style="
+            width: 62.12px;
+            height: 62.12px;
+            left: 55.64px;
+            top: 32.79px;
+            position: absolute;
+          "
+        >
+          <svg
+            width="62.12"
+            height="62.12"
+            viewBox="0 0 63 63"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="display: block; width: 100%; height: 100%"
+            role="img"
+            aria-label="Headcount by location donut chart"
+          >
+            <circle cx="31.8545" cy="31.8528" r="31.0615" fill="#599D15" />
+            <mask id="hc-donut-m1" maskUnits="userSpaceOnUse" x="-0.207522" y="-0.0845961" width="33" height="56" fill="black">
+              <rect fill="white" x="-0.207522" y="-0.0845961" width="33" height="56" />
+              <path
+                d="M31.854 0.792388C25.7106 0.792388 19.7052 2.61411 14.5971 6.0272C9.4891 9.44028 5.50787 14.2914 3.1569 19.9672C0.805923 25.6429 0.190802 31.8884 1.38932 37.9137C2.58783 43.939 5.54616 49.4737 9.89018 53.8177L31.854 31.8539L31.854 0.792388Z"
+              />
+            </mask>
+            <path
+              d="M31.854 0.792388C25.7106 0.792388 19.7052 2.61411 14.5971 6.0272C9.4891 9.44028 5.50787 14.2914 3.1569 19.9672C0.805923 25.6429 0.190802 31.8884 1.38932 37.9137C2.58783 43.939 5.54616 49.4737 9.89018 53.8177L31.854 31.8539L31.854 0.792388Z"
+              fill="#1599D3"
+            />
+            <path
+              d="M31.854 0.792388C25.7106 0.792388 19.7052 2.61411 14.5971 6.0272C9.4891 9.44028 5.50787 14.2914 3.1569 19.9672C0.805923 25.6429 0.190802 31.8884 1.38932 37.9137C2.58783 43.939 5.54616 49.4737 9.89018 53.8177L31.854 31.8539L31.854 0.792388Z"
+              stroke="white"
+              stroke-width="1.58477"
+              mask="url(#hc-donut-m1)"
+            />
+            <mask id="hc-donut-m2" maskUnits="userSpaceOnUse" x="-0.207522" y="-0.0845961" width="33" height="34" fill="black">
+              <rect fill="white" x="-0.207522" y="-0.0845961" width="33" height="34" />
+              <path
+                d="M31.854 0.792388C27.6827 0.792388 23.5542 1.63255 19.7146 3.26276C15.8751 4.89297 12.4032 7.27982 9.50618 10.2809C6.60912 13.282 4.34622 16.8359 2.85245 20.7306C1.35869 24.6252 0.664675 28.7808 0.811808 32.9495L31.854 31.8539L31.854 0.792388Z"
+              />
+            </mask>
+            <path
+              d="M31.854 0.792388C27.6827 0.792388 23.5542 1.63255 19.7146 3.26276C15.8751 4.89297 12.4032 7.27982 9.50618 10.2809C6.60912 13.282 4.34622 16.8359 2.85245 20.7306C1.35869 24.6252 0.664675 28.7808 0.811808 32.9495L31.854 31.8539L31.854 0.792388Z"
+              fill="#FF8036"
+            />
+            <path
+              d="M31.854 0.792388C27.6827 0.792388 23.5542 1.63255 19.7146 3.26276C15.8751 4.89297 12.4032 7.27982 9.50618 10.2809C6.60912 13.282 4.34622 16.8359 2.85245 20.7306C1.35869 24.6252 0.664675 28.7808 0.811808 32.9495L31.854 31.8539L31.854 0.792388Z"
+              stroke="white"
+              stroke-width="1.58477"
+              mask="url(#hc-donut-m2)"
+            />
+            <mask id="hc-donut-m3" maskUnits="userSpaceOnUse" x="2.79248" y="-0.0845961" width="30" height="34" fill="black">
+              <rect fill="white" x="2.79248" y="-0.0845961" width="30" height="34" />
+              <path
+                d="M31.854 0.792388C26.2797 0.792388 20.8081 2.29245 16.0132 5.13524C11.2183 7.97802 7.27671 12.0588 4.60196 16.9494L31.854 31.8539L31.854 0.792388Z"
+              />
+            </mask>
+            <path
+              d="M31.854 0.792388C26.2797 0.792388 20.8081 2.29245 16.0132 5.13524C11.2183 7.97802 7.27671 12.0588 4.60196 16.9494L31.854 31.8539L31.854 0.792388Z"
+              fill="#80429D"
+            />
+            <path
+              d="M31.854 0.792388C26.2797 0.792388 20.8081 2.29245 16.0132 5.13524C11.2183 7.97802 7.27671 12.0588 4.60196 16.9494L31.854 31.8539L31.854 0.792388Z"
+              stroke="white"
+              stroke-width="1.58477"
+              mask="url(#hc-donut-m3)"
+            />
+            <mask id="hc-donut-m4" maskUnits="userSpaceOnUse" x="10.7925" y="-0.0845961" width="22" height="35" fill="black">
+              <rect fill="white" x="10.7925" y="-0.0845961" width="22" height="35" />
+              <path
+                d="M31.854 0.792388C24.7771 0.792388 17.9124 3.20899 12.3961 7.64218L31.854 31.8539L31.854 0.792388Z"
+              />
+            </mask>
+            <path
+              d="M31.854 0.792388C24.7771 0.792388 17.9124 3.20899 12.3961 7.64218L31.854 31.8539L31.854 0.792388Z"
+              fill="#228382"
+            />
+            <path
+              d="M31.854 0.792388C24.7771 0.792388 17.9124 3.20899 12.3961 7.64218L31.854 31.8539L31.854 0.792388Z"
+              stroke="white"
+              stroke-width="1.58477"
+              mask="url(#hc-donut-m4)"
+            />
+            <mask id="hc-donut-m5" maskUnits="userSpaceOnUse" x="20.7925" y="-0.0845961" width="12" height="33" fill="black">
+              <rect fill="white" x="20.7925" y="-0.0845961" width="12" height="33" />
+              <path
+                d="M31.854 0.792388C28.7132 0.792388 25.5906 1.26873 22.5928 2.20517L31.854 31.8539L31.854 0.792388Z"
+              />
+            </mask>
+            <path
+              d="M31.854 0.792388C28.7132 0.792388 25.5906 1.26873 22.5928 2.20517L31.854 31.8539L31.854 0.792388Z"
+              fill="#CE4755"
+            />
+            <path
+              d="M31.854 0.792388C28.7132 0.792388 25.5906 1.26873 22.5928 2.20517L31.854 31.8539L31.854 0.792388Z"
+              stroke="white"
+              stroke-width="1.58477"
+              mask="url(#hc-donut-m5)"
+            />
+            <circle cx="31.4575" cy="31.933" r="16.0854" fill="white" />
+          </svg>
+        </div>
+        <div
+          style="
+            width: 40.9px;
+            left: 22.59px;
+            top: 21.78px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 4.72px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+          "
+        >
+          Czech Republic
+        </div>
+        <div
+          style="
+            width: 27.41px;
+            left: 36.02px;
+            top: 27.05px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 6.29px;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+          "
+        >
+          4.3%
+        </div>
+        <div
+          style="
+            width: 7.33px;
+            height: 0px;
+            left: 65.06px;
+            top: 29.64px;
+            position: absolute;
+            transform: rotate(44deg);
+            transform-origin: top left;
+            outline: 0.35px #b5b2af solid;
+            outline-offset: -0.17px;
+          "
+        ></div>
+        <div
+          style="
+            width: 30.9px;
+            left: 15.77px;
+            top: 35.43px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 4.72px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+          "
+        >
+          Ukraine
+        </div>
+        <div
+          style="
+            width: 27.41px;
+            left: 19.26px;
+            top: 40.67px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 6.29px;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+          "
+        >
+          6.8%
+        </div>
+        <div
+          style="
+            width: 8.61px;
+            height: 0px;
+            left: 50.11px;
+            top: 43.01px;
+            position: absolute;
+            transform: rotate(9deg);
+            transform-origin: top left;
+            outline: 0.35px #b5b2af solid;
+            outline-offset: -0.17px;
+          "
+        ></div>
+        <div
+          style="
+            width: 30.9px;
+            left: 18.82px;
+            top: 51.4px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 4.72px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+          "
+        >
+          Poland
+        </div>
+        <div
+          style="
+            width: 30.9px;
+            left: 20.76px;
+            top: 70.77px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 4.72px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+          "
+        >
+          Canada
+        </div>
+        <div
+          style="
+            width: 27.41px;
+            left: 22.31px;
+            top: 56.64px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 6.29px;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+          "
+        >
+          8.7%
+        </div>
+        <div
+          style="
+            width: 27.41px;
+            left: 24.25px;
+            top: 76px;
+            position: absolute;
+            text-align: right;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 6.29px;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+          "
+        >
+          11.8%
+        </div>
+        <div
+          style="
+            width: 34.6px;
+            left: 124.04px;
+            top: 54.02px;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 4.72px;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+          "
+        >
+          United States
+        </div>
+        <div
+          style="
+            width: 27.41px;
+            left: 123.92px;
+            top: 59.44px;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            color: #48413f;
+            font-size: 6.29px;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+          "
+        >
+          62.7%
+        </div>
+        <div
+          style="
+            left: 10.48px;
+            top: 5.3px;
+            position: absolute;
+            color: #2e7918;
+            font-size: 10.21px;
+            font-family: Merriweather, Georgia, serif;
+            font-weight: 600;
+            word-wrap: break-word;
+          "
+        >
+          Headcount by Location
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

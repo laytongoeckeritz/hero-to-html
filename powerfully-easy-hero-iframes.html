@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Powerfully Easy — hero assembly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: #1a1a1a;
+        font-family: Inter, system-ui, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-canvas {
+        position: relative;
+        width: 1165px;
+        height: 446px;
+        flex-shrink: 0;
+        overflow: visible;
+      }
+
+      .hero-layer {
+        position: absolute;
+        border: none;
+        overflow: visible;
+        background: transparent;
+      }
+
+      /* Desktop UI — center, z2 (behind charts + mascot) */
+      .hero-iframe-desktop {
+        left: 264px;
+        top: 70px;
+        width: 656px;
+        height: 346px;
+        z-index: 2;
+      }
+
+      /* Headcount by Location — left side; extra width for shadow */
+      .hero-iframe-headcount {
+        left: 65px;
+        top: 115px;
+        width: 180px;
+        height: 120px;
+        z-index: 6;
+      }
+
+      /* Turnover by Type — bottom left; extra width for shadow */
+      .hero-iframe-turnover {
+        left: 35px;
+        top: 258px;
+        width: 440px;
+        height: 155px;
+        z-index: 6;
+      }
+
+      /* New Hires by Department — top right */
+      .hero-iframe-newhires {
+        left: 972px;
+        top: 90px;
+        width: 260px;
+        height: 118px;
+        z-index: 12;
+      }
+
+      /* Ask BambooHR chat — overlaps right side of desktop UI */
+      .hero-iframe-chat {
+        left: 734px;
+        top: 44px;
+        width: 224px;
+        height: 382px;
+        z-index: 10;
+      }
+
+      /* Panda in green squircle */
+      .hero-panda {
+        position: absolute;
+        left: 260px;
+        top: 10px;
+        z-index: 8;
+      }
+      .hero-panda img {
+        width: 220px;
+        height: auto;
+        display: block;
+      }
+
+      /* Leaf */
+      .hero-leaf {
+        position: absolute;
+        left: 220px;
+        top: -30px;
+        width: 73px;
+        height: auto;
+        z-index: 9;
+        transform: rotate(-10deg);
+      }
+
+      /* Suggestion pills */
+      .suggestion-pill {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        background: #f6f6f4;
+        border: 0.72px solid #2e7918;
+        border-radius: 17.6px;
+        box-shadow: -4.291455268859863px 4.291455268859863px 0px #599d15;
+        color: #48413f;
+        font-size: 10.02px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        line-height: 1.35;
+        padding: 4px 8px;
+        word-wrap: break-word;
+        white-space: nowrap;
+      }
+      .suggestion-pill--wrap {
+        white-space: normal;
+        max-width: 170px;
+      }
+
+      .hero-pill {
+        position: absolute;
+        z-index: 14;
+      }
+
+      .hero-pill--pto       { left: 910px; top: 215px; }
+      .hero-pill--401k      { left: 640px; top: 260px; }
+      .hero-pill--nicole    { left: 650px; top: 300px; }
+      .hero-pill--holiday   { left: 870px; top: 265px; }
+      .hero-pill--w2        { left: 910px; top: 315px; }
+    </style>
+  </head>
+  <body>
+    <div class="hero-canvas" role="img" aria-label="BambooHR Powerfully Easy hero composition">
+
+      <!-- Desktop UI (Employee Community + My Stuff) -->
+      <iframe class="hero-layer hero-iframe-desktop"
+              title="Employee Community"
+              src="components/desktop-ui.html?embed"></iframe>
+
+      <!-- Headcount by Location -->
+      <iframe class="hero-layer hero-iframe-headcount"
+              title="Headcount by Location"
+              src="components/headcount-by-location.html?embed"></iframe>
+
+      <!-- Turnover by Type -->
+      <iframe class="hero-layer hero-iframe-turnover"
+              title="Turnover by Type"
+              src="components/turnover-by-type.html?embed"></iframe>
+
+      <!-- New Hires by Department -->
+      <iframe class="hero-layer hero-iframe-newhires"
+              title="New Hires by Department"
+              src="components/new-hires-by-department.html?embed"></iframe>
+
+      <!-- Panda mascot + leaf -->
+      <img class="hero-leaf" src="assets/leaf.svg" alt="" width="52" height="47" />
+      <div class="hero-panda" aria-hidden="true">
+        <img src="assets/panda.svg" alt="" width="148" height="126" />
+      </div>
+
+      <!-- Ask BambooHR chat -->
+      <iframe class="hero-layer hero-iframe-chat"
+              title="Ask BambooHR"
+              src="components/mobile-ui.html?embed"></iframe>
+
+      <!-- Floating suggestion pills -->
+      <div class="hero-pill hero-pill--pto">
+        <div class="suggestion-pill suggestion-pill--wrap">How much PTO will I have as of November 26th?</div>
+      </div>
+      <div class="hero-pill hero-pill--401k">
+        <div class="suggestion-pill">What is our 401k match?</div>
+      </div>
+      <div class="hero-pill hero-pill--nicole">
+        <div class="suggestion-pill">Who is Nicole Scholz?</div>
+      </div>
+      <div class="hero-pill hero-pill--holiday">
+        <div class="suggestion-pill suggestion-pill--wrap">When is the next company holiday?</div>
+      </div>
+      <div class="hero-pill hero-pill--w2">
+        <div class="suggestion-pill">Where can I find my W2?</div>
+      </div>
+    </div>
+  </body>
+</html>

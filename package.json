@@ -1,0 +1,13 @@
+{
+  "name": "hero-to-html",
+  "private": true,
+  "scripts": {
+    "preview": "node preview-server.mjs",
+    "preview:serve": "serve -l 5173 .",
+    "dev": "live-server --port=5174 --no-browser"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.4"
+  }
+}
