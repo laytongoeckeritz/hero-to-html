@@ -9,6 +9,7 @@ The output behaves like an image -- nothing is interactive, focusable, or select
 ## Live Demo
 
 - [Hero Composition](https://laytongoeckeritz.github.io/hero-to-html/powerfully-easy-hero.html) -- full-size static render
+- [Animated Version](https://laytongoeckeritz.github.io/hero-to-html/powerfully-easy-hero-animated.html) -- entrance animations on load
 - [Responsive Version](https://laytongoeckeritz.github.io/hero-to-html/hero-responsive-test.html) -- scales to fit any viewport width
 
 ## Files
@@ -16,6 +17,7 @@ The output behaves like an image -- nothing is interactive, focusable, or select
 | File | Description |
 |------|-------------|
 | `powerfully-easy-hero.html` | The assembled hero (1155x450 canvas, all components inlined) |
+| `powerfully-easy-hero-animated.html` | Animated variant with CSS entrance animations on page load |
 | `hero-responsive-test.html` | Responsive wrapper that scales the hero to fit any viewport width |
 | `powerfully-easy-hero-iframes.html` | Archived iframe-based version (backup) |
 | `components/` | 10 standalone component HTML files for individual editing |
