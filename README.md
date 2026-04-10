@@ -6,6 +6,11 @@ The output behaves like an image -- nothing is interactive, focusable, or select
 
 ![Reference](hero-images/powerfully-easy-hero.png)
 
+## Live Demo
+
+- [Hero Composition](https://laytongoeckeritz.github.io/hero-to-html/powerfully-easy-hero.html) -- full-size static render
+- [Responsive Version](https://laytongoeckeritz.github.io/hero-to-html/hero-responsive-test.html) -- scales to fit any viewport width
+
 ## Files
 
 | File | Description |
